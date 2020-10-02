@@ -1,12 +1,12 @@
 #include "bits/stdc++.h"
 using namespace std;
 int BIT[1000]={0};int n;
-void update(int id,int el)
+void update(int id,int el)//updating a particular element of array
 {
 	for(a[id]=el;id<=n;id+=(id&(-id)))
 	BIT[id]+=el;
 }
-int query(int id)
+int query(int id)//gives sum till id from 1st index
 {   int sum=0;
 	for(;id>0;id-=(id&(-id)))
 	sum+=BIT[id];
@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
 
     for(int i=0;i<n;i++)
     {cin>>a[i];
-    update(i,a[i]);
+    update(i+1,a[i]);
     }
     
   
