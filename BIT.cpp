@@ -3,7 +3,7 @@ using namespace std;
 int BIT[1000]={0};int n;
 void update(int id,int el)
 {
-	for(;id<=n;id+=(id&(-id)))
+	for(a[id]=el;id<=n;id+=(id&(-id)))
 	BIT[id]+=el;
 }
 int query(int id)
