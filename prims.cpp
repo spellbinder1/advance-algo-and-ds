@@ -2,6 +2,7 @@
 using namespace std;
 const int N=1e5;
 #define pb push_back
+#define ip pair<int,int> 
 vector<vector<ip> >v(N+1);
 bool inmst[N+1];
 int n;
