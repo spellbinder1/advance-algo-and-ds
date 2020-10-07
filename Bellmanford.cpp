@@ -1,5 +1,18 @@
 #include "bits/stdc++.h"
 using namespace std;
+typedef long long int ll;
+const ll mod=1e9+7;
+const int N=1e5;
+#define mp make_pair
+#define ip pair<int,int>
+#define umii unordered_map<int,int>
+#define umss unordered_map<string,string>
+#define FOR(i,a,b) for(ll i=a;i<=b;i++)
+#define lcm(a,b) (a*b)/gcd(a,b)
+#define all(x) x.begin(),x.end()
+#define setbit(x) __builtin_popcount(x)
+#define print(x) for(auto i:x)cout<<i<<" ";
+#define pb push_back
 vector<tuple<int,int,int> >edge;
 
 int main(int argc, char const *argv[])
@@ -23,7 +36,7 @@ for(int i=0;i<m;i++)
 {
   int a,b,w;
   cin>>a>>b>>w;
-  v1.pb(make_tuple(a,b,w));
+  edge.pb(make_tuple(a,b,w));
 }
 
 int dist[n+1];//it will tell the distance of each node from source
