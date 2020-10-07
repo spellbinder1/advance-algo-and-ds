@@ -15,6 +15,13 @@ const int N=1e5;
 #define pb push_back
 const ll INF=1e9;
 vector<vector<ip> >v(N+1);//first store vertex second weight of edge 
+
+
+
+///dijkstra fails if edges have negative weights
+
+
+
 void dijkstra(int src)
 {
   
