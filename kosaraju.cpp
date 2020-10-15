@@ -1,18 +1,4 @@
-#include "bits/stdc++.h"
-using namespace std;
-const int N=1e5;
-#define ip pair<int,int>
-#define pb push_back
-vector<vector<ip> >v(N+1);
-bool vist[N+1];
-vector<int>res;
-
-//program for kosaraju algorithm
-// what we do here is run two dfs or two times dfs
-//first we run dfs on our normal graph
-// then on the graph with reversed edges 
-
-
+//kosaraju algorithm
 void dfs1(int src)
 { 
 if(vist[src])return ;
