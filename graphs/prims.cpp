@@ -1,12 +1,3 @@
-#include "bits/stdc++.h"
-using namespace std;
-const int N=1e5;
-#define pb push_back
-#define ip pair<int,int> 
-vector<vector<ip> >v(N+1);
-bool inmst[N+1];
-int n;
-const int INF=1e9;
 void prims(int src)
 {
   priority_queue<ip,vector<ip>,greater<ip> >pq;
@@ -40,15 +31,5 @@ void prims(int src)
 
 
   }
-
-}
-int main(int argc, char const *argv[])
-{ 
- ios_base::sync_with_stdio(false);
- cin.tie(NULL);
- 
-memset(inmst,false,sizeof(inmst));
-
-
 
 }
