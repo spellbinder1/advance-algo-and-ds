@@ -13,4 +13,4 @@ for(int j=1;j<=k;j++)
 //2^j splits nicely into the ranges [i,i+2^j−1−1] and [i+2^j−1,i+2^j−1], 
 //both of length 2^j−1,
 // we can generate the table efficiently using dynamic programming:
-.
+}
