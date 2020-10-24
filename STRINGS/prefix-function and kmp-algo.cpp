@@ -11,7 +11,7 @@ string ref=s+"#"+pat;
 
 //build prefix function for string ref
 int pip[ref.length()]={0};
-pi[0]=0;
+pip[0]=0;
 
 //prefix function generation
 for(int i=1;i<ref.length();i++)
