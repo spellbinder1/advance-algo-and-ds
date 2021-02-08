@@ -1,7 +1,7 @@
 #include "bits/stdc++.h"
 using namespace std;
 int BIT[1000]={0};int n;
-void update(int id,int el)//updating a particular element of array
+void update(int id,int el)//adding something to  a particular element of array
 {
 	for(a[id]=el;id<=n;id+=(id&(-id)))
 	BIT[id]+=el;
